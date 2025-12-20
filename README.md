@@ -1,73 +1,79 @@
-# React + TypeScript + Vite
+# Ahmad Chairiansyah (Ryan) - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-19-blue?logo=react&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-6-purple?logo=vite&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-cyan?logo=tailwindcss&logoColor=white)
 
-Currently, two official plugins are available:
+> "Building scalable web applications with a focus on high-performance backends and seamless AI-driven user experiences."
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Overview
 
-## React Compiler
+This is my personal portfolio website, designed to showcase my skills, experience, and projects as a Fullstack Developer. It is built with the latest web technologies, focusing on performance, accessibility, and a clean user experience.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**[Live Demo]** _(Add your Vercel/Netlify link here)_
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This project is built using the latest ecosystem tools:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Framework:** [React 19](https://react.dev/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Linting:** ESLint + Prettier
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ✨ Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- 🎨 **Modern UI/UX:** Clean, minimalist design with a focus on readability.
+- 🌓 **Dark/Light Mode:** Fully supported theme switching with persistent state.
+- 📱 **Fully Responsive:** Optimized for mobile, tablet, and desktop devices.
+- ⚡ **High Performance:** Built with Vite for instant server start and optimized builds.
+- 🎭 **Smooth Animations:** Interactive elements powered by Framer Motion.
+
+## 📂 Project Structure
+
+```bash
+src/
+├── assets/        # Static assets (images, PDFs)
+├── components/    # Reusable UI components (Hero, About, etc.)
+├── constants/     # Configuration and constant values
+├── contexts/      # React Contexts (e.g., DarkMode)
+├── data.ts        # Centralized content data
+├── types.ts       # TypeScript definitions
+└── App.tsx        # Main application entry
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🏃‍♂️ Running Locally
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+To run this project on your local machine:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/amdryankz/portfolio.git
+   cd portfolio
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+## 📬 Contact
+
+I am currently open to full-time opportunities. Feel free to reach out!
+
+- **LinkedIn:** [Ahmad Chairiansyah](https://www.linkedin.com/in/ahmad-chairiansyah-5b98b1180/)
+- **Email:** [ahmad.chairiansyah@gmail.com](mailto:ahmad.chairiansyah@gmail.com)
+- **GitHub:** [amdryankz](https://github.com/amdryankz)
+- **WhatsApp:** [Chat on WhatsApp](https://wa.me/082260683030)
+
+---
+
+_Built with ❤️ by Ryan_
