@@ -1,7 +1,7 @@
 import { Brain, Code2, Database, Languages, Layout, Server } from "lucide-react";
 
-const placeholderHero = "/src/assets/photo-1.JPG";
-const placeholderAbout = "/src/assets/photo-2.JPG";
+const placeholderHero = "/assets/photo-1.JPG";
+const placeholderAbout = "/assets/photo-2.JPG";
 
 export const PERSONAL_INFO = {
   name: "Ryan",
@@ -14,7 +14,7 @@ export const PERSONAL_INFO = {
     linkedin: "https://www.linkedin.com/in/ahmad-chairiansyah-5b98b1180/",
     email: "mailto:ahmad.chairiansyah@gmail.com",
     whatsapp: "https://wa.me/082260683030",
-    cv: "/src/assets/Ahmad Chairiansyah CV.pdf",
+    cv: "/assets/Ahmad Chairiansyah CV.pdf",
   },
 };
 
@@ -55,7 +55,7 @@ export const PROJECTS = [
   {
     title: "OPTIMA",
     description: "An AI career assistant providing end-to-end support through CV analysis, job matching, interview practice, and offer evaluation.",
-    image: "/src/assets/optima.png",
+    image: "/assets/optima.png",
     tags: ["Next.js",
       "PostgreSQL",
       "Prisma ORM",
@@ -70,7 +70,7 @@ export const PROJECTS = [
   {
     title: "Travel Itinerary Planner",
     description: "A modern web application for planning, organizing, and managing your travel itineraries with AI-powered features.",
-    image: "/src/assets/travel.png",
+    image: "/assets/travel.png",
     tags: ["React",
       "Tailwind ",
       "Leaflet",
@@ -88,7 +88,7 @@ export const PROJECTS = [
   {
     title: "Al Safwa Hotel",
     description: "A web-based application that covers a comprehensive hotel workflow, from reservations, guest management, transactions, to financial reporting and automated testing.",
-    image: "/src/assets/hotel.png",
+    image: "/assets/hotel.png",
     tags: ["Laravel", "Tailwind", "MySQL", "Alpine.js", "Pest"],
     link: "https://alsafwa-hotel.vercel.app",
     github: "https://github.com/amdryankz/alsafwa-hotel",
@@ -96,7 +96,7 @@ export const PROJECTS = [
   {
     title: "Dungeon Master AI",
     description: "An interactive adventure that enables users to engage in dynamic storytelling with an AI Dungeon Master and supports real-time multiplayer interactions.",
-    image: "/src/assets/dnd.png",
+    image: "/assets/dnd.png",
     tags: ["React", "Socket.io", "Tailwind", "Express", "Google Gemini API", "Node.js"],
     link: "https://dnd-ai-project.vercel.app",
     github: "https://github.com/mini-dnd/dnd-ai-project/tree/main",
@@ -104,7 +104,7 @@ export const PROJECTS = [
   {
     title: "Blublu eCommerce",
     description: "A web application built to simulate a modern online shopping experience.",
-    image: "/src/assets/blublu.png",
+    image: "/assets/blublu.png",
     tags: ["Next.js", "React", "MongoDB", "Redis", "Zod"],
     link: "https://blublu-ecommerce.vercel.app",
     github: "#",
@@ -112,7 +112,7 @@ export const PROJECTS = [
   {
     title: "Beasiswa",
     description: "Web-based scholarship management system built with Laravel to streamline applications and administration.",
-    image: "/src/assets/scholar.png",
+    image: "/assets/scholar.png",
     tags: ["Laravel", "Vite", "Tailwind", "MySQL", "Alpine.js", "Pest", "Flowbite", "jQuery"],
     link: "#",
     github: "https://github.com/amdryankz/pengajuan-beasiswa",
