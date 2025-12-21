@@ -8,7 +8,7 @@
 
 This is my personal portfolio website, designed to showcase my skills, experience, and projects as a Fullstack Developer. It is built with the latest web technologies, focusing on performance, accessibility, and a clean user experience.
 
-**[Live Demo]** _(Add your Vercel/Netlify link here)_
+**[Live Demo]** **https://www.amd-ryankz.web.id**
 
 ## 🛠 Tech Stack
 
