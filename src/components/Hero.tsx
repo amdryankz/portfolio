@@ -16,11 +16,11 @@ export const Hero: React.FC = () => {
       {/* Background Decoration */}
       <motion.div
         style={{ y }}
-        className="absolute top-[-20%] right-[-10%] w-160 h-160 bg-blue-100 dark:bg-blue-900/20 rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-3xl opacity-50 md:opacity-70 -z-10"
+        className="absolute top-[-20%] right-[-10%] w-160 h-160 bg-blue-100 dark:bg-blue-900/20 rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-3xl opacity-50 md:opacity-70 -z-10 will-change-transform"
       />
       <motion.div
         style={{ y }}
-        className="absolute bottom-[-20%] left-[-10%] w-140 h-140 bg-indigo-100 dark:bg-indigo-900/20 rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-3xl opacity-50 md:opacity-70 -z-10"
+        className="absolute bottom-[-20%] left-[-10%] w-140 h-140 bg-indigo-100 dark:bg-indigo-900/20 rounded-full mix-blend-multiply dark:mix-blend-lighten filter blur-3xl opacity-50 md:opacity-70 -z-10 will-change-transform"
       />
 
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center w-full">

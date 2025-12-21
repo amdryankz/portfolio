@@ -27,14 +27,16 @@ export const Projects: React.FC = () => {
             key={index}
             variants={fadeInUp}
             whileHover={{ y: -10 }}
-            className="group bg-white dark:bg-slate-900/50 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
+            className="group bg-white dark:bg-slate-900/50 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col will-change-transform"
           >
             {/* Project Image Container */}
             <div className="relative overflow-hidden aspect-video bg-slate-100 dark:bg-slate-800">
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 will-change-transform"
               />
               {/* Overlay with links on hover (Desktop) */}
               <div className="absolute inset-0 bg-slate-900/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden md:flex items-center justify-center gap-4">

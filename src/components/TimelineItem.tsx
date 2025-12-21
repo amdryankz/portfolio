@@ -13,7 +13,10 @@ export const TimelineItem: React.FC<TimelineItemProps> = ({
   data,
   icon: Icon,
 }) => (
-  <motion.div variants={fadeInUp} className="relative pl-12 group">
+  <motion.div
+    variants={fadeInUp}
+    className="relative pl-12 group will-change-transform"
+  >
     {/* Vertical Line */}
     <div className="absolute left-4 top-2 bottom-0 w-0.5 bg-slate-200 dark:bg-slate-700 group-last:bottom-auto group-last:h-full" />
 

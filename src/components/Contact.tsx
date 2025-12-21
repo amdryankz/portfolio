@@ -21,12 +21,15 @@ export const Contact: React.FC = () => {
         </p>
       </motion.div>
 
-      <motion.div variants={fadeInUp} className="max-w-2xl mx-auto">
+      <motion.div
+        variants={fadeInUp}
+        className="max-w-2xl mx-auto will-change-transform"
+      >
         <div className="bg-slate-50/50 dark:bg-slate-900/50  rounded-2xl border border-slate-200 dark:border-slate-700 p-8 md:p-12">
           <div className="text-center mb-8">
             <a
               href={PERSONAL_INFO.social.email}
-              className="inline-flex items-center gap-3 px-8 py-4 bg-slate-900 dark:bg-blue-600 text-white rounded-full font-medium hover:bg-slate-800 dark:hover:bg-blue-700 transition-all shadow-md hover:shadow-lg group"
+              className="inline-flex items-center gap-3 px-8 py-4 bg-slate-900 dark:bg-blue-600 text-white rounded-full font-medium hover:bg-slate-800 dark:hover:bg-blue-700 transition-colors transition-shadow duration-300 shadow-md hover:shadow-lg group"
             >
               <Mail className="group-hover:scale-110 transition-transform" />
               Send me an email
@@ -42,7 +45,7 @@ export const Contact: React.FC = () => {
                 href={PERSONAL_INFO.social.github}
                 target="_blank"
                 rel="noreferrer"
-                className="p-3 rounded-full bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-slate-900 hover:border-slate-900 dark:hover:border-white transition-all"
+                className="p-3 rounded-full bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-slate-900 hover:border-slate-900 dark:hover:border-white transition-colors duration-300"
                 aria-label="GitHub Profile"
               >
                 <Github size={20} />
@@ -51,7 +54,7 @@ export const Contact: React.FC = () => {
                 href={PERSONAL_INFO.social.linkedin}
                 target="_blank"
                 rel="noreferrer"
-                className="p-3 rounded-full bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all"
+                className="p-3 rounded-full bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-colors duration-300"
                 aria-label="LinkedIn Profile"
               >
                 <Linkedin size={20} />
@@ -60,7 +63,7 @@ export const Contact: React.FC = () => {
                 href={PERSONAL_INFO.social.whatsapp}
                 target="_blank"
                 rel="noreferrer"
-                className="p-3 rounded-full bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-green-600 hover:text-white hover:border-green-600 transition-all"
+                className="p-3 rounded-full bg-slate-50 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300 hover:bg-green-600 hover:text-white hover:border-green-600 transition-colors duration-300"
                 aria-label="WhatsApp"
               >
                 <MessageCircle size={20} />

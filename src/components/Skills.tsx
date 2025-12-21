@@ -26,7 +26,7 @@ export const Skills: React.FC = () => {
             key={index}
             variants={fadeInUp}
             whileHover={{ y: -5, borderColor: "var(--color-blue-400)" }}
-            className="p-6 rounded-2xl bg-white dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md dark:shadow-slate-900/50 transition-all"
+            className="p-6 rounded-2xl bg-white dark:bg-slate-800 border-2 border-slate-100 dark:border-slate-700 shadow-sm hover:shadow-md dark:shadow-slate-900/50 transition-shadow duration-300 will-change-transform"
           >
             <skill.icon className="w-12 h-12 text-blue-600 dark:text-blue-400 mb-6 p-2 bg-blue-50 dark:bg-blue-900/30 rounded-lg" />
             <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-4">

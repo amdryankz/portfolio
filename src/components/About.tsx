@@ -12,11 +12,16 @@ export const About: React.FC = () => {
     >
       <div className="grid md:grid-cols-2 gap-16 items-center">
         {/* Image Column */}
-        <motion.div variants={fadeInUp} className="relative md:pr-6">
+        <motion.div
+          variants={fadeInUp}
+          className="relative md:pr-6 will-change-transform"
+        >
           <div className="relative rounded-3xl overflow-hidden shadow-2xl dark:shadow-slate-900/50 aspect-4/3">
             <img
               src={PERSONAL_INFO.aboutImage}
               alt="About Me"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0" />
