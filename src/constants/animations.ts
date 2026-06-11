@@ -1,4 +1,4 @@
-import type { Variants, } from "framer-motion";
+import type { Variants } from "framer-motion";
 
 export const fadeInUp: Variants = {
   hidden: { opacity: 0, y: 40 },
@@ -6,7 +6,6 @@ export const fadeInUp: Variants = {
     opacity: 1,
     y: 0,
     transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] },
-    willChange: "transform, opacity",
   },
 };
 
@@ -24,6 +23,5 @@ export const scaleUp: Variants = {
     scale: 1,
     opacity: 1,
     transition: { duration: 0.5 },
-    willChange: "transform, opacity",
   },
 };

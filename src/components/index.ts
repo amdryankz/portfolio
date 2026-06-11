@@ -8,4 +8,6 @@ export { Projects } from "./Projects";
 export { Contact } from "./Contact";
 export { Footer } from "./Footer";
 export { SectionWrapper } from "./SectionWrapper";
+export { SectionHeader } from "./SectionHeader";
 export { TimelineItem } from "./TimelineItem";
+export { CustomCursor } from "./CustomCursor";

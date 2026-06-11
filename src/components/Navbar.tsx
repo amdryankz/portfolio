@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Moon, Sun } from "lucide-react";
 import { PERSONAL_INFO } from "../data";
 import { useDarkMode } from "../contexts/DarkModeContext";
@@ -15,7 +15,7 @@ const navLinks: NavLink[] = [
   { name: "Contact", href: "#contact" },
 ];
 
-export const Navbar: React.FC = () => {
+export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { isDarkMode, toggleDarkMode } = useDarkMode();
@@ -25,6 +25,16 @@ export const Navbar: React.FC = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Close mobile menu on Escape key
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsOpen(false);
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen]);
 
   return (
     <motion.nav
@@ -88,26 +98,31 @@ export const Navbar: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Dropdown */}
-      {isOpen && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="fixed inset-0 bg-white/95 dark:bg-slate-900/95 backdrop-blur-lg z-40 flex flex-col items-center justify-center gap-8 md:hidden"
-        >
-          {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              onClick={() => setIsOpen(false)}
-              className="text-2xl font-medium text-slate-800 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400"
-            >
-              {link.name}
-            </a>
-          ))}
-        </motion.div>
-      )}
+      {/* Mobile Menu Dropdown — wrapped in AnimatePresence so exit animation fires */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            key="mobile-menu"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-white/95 dark:bg-slate-900/95 backdrop-blur-lg z-40 flex flex-col items-center justify-center gap-8 md:hidden"
+            role="dialog"
+            aria-label="Navigation menu"
+          >
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                onClick={() => setIsOpen(false)}
+                className="text-2xl font-medium text-slate-800 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400"
+              >
+                {link.name}
+              </a>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.nav>
   );
 };

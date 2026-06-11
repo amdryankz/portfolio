@@ -2,7 +2,6 @@ import type { LucideIcon } from "lucide-react";
 
 export interface PersonalInfo {
   name: string;
-  role: string;
   shortBio: string;
   longBio: string;
   heroImage: string;
@@ -11,6 +10,8 @@ export interface PersonalInfo {
     github: string;
     linkedin: string;
     email: string;
+    whatsapp: string;
+    cv: string;
   };
 }
 
@@ -35,13 +36,14 @@ export interface Experience {
   period: string;
   type: string;
   description: string | string[];
+  tags?: string[];
 }
 
 export interface Education {
   institution: string;
   degree: string;
   period: string;
-  description: string | string[];
+  description?: string | string[];
 }
 
 export interface TimelineData {
@@ -52,6 +54,7 @@ export interface TimelineData {
   period: string;
   type?: string;
   description?: string | string[];
+  tags?: string[];
 }
 
 export interface NavLink {

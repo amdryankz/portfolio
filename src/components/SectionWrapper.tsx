@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { staggerContainer } from "../constants/animations";
 
@@ -8,11 +8,11 @@ interface SectionWrapperProps {
   className?: string;
 }
 
-export const SectionWrapper: React.FC<SectionWrapperProps> = ({
+export const SectionWrapper = ({
   children,
   id,
   className = "",
-}) => {
+}: SectionWrapperProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 

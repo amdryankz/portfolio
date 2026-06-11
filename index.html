@@ -5,7 +5,23 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+
+  <!-- Preload LCP Image -->
+  <link rel="preload" as="image" href="/assets/photo-1.webp" fetchpriority="high" />
+
+  <!-- SEO -->
+  <title>Ryan — Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Ryan, a Fullstack Developer specializing in TypeScript, Next.js, distributed systems, and AI-powered web applications." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ryan — Fullstack Developer" />
+  <meta property="og:description"
+    content="Building scalable web applications with a focus on high-performance backends, distributed systems, and AI-driven user experiences." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/photo-1.webp" />
+
+  <!-- Dark-mode flash prevention -->
   <script>
     if (localStorage.getItem('darkMode') === 'false') {
       document.documentElement.classList.remove('dark');
